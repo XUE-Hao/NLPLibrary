@@ -20,7 +20,7 @@ class Vocabulary:
         self.name = name
         self.word2index = {}
         self.word2count = {}
-        self.index2word = {0: '<SOS>', 1: '<EOS>', 2: '<UNK>', 3: '<PAD>'}
+        self.index2word = {0: '<PAD>', 1: '<SOS>', 2: '<EOS>', 3: '<UNK>'}
         self.vocab_size = 4  # 初始为特殊标签的个数
 
     def add_word(self, word):
