@@ -33,7 +33,7 @@ def train():  # 训练一个epoch
         optimizer.step()
 
         total_loss += loss.item()
-        if batch_id % args.log_batch_interval == 0 and batch_id > 0:
+        if batch_id % args.log_batch_interval == 0:
             batch_loss = total_loss / args.log_batch_interval
             all_train_losses.append(batch_loss)
             elapsed = time.time() - start_time
